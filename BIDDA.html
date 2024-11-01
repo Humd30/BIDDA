@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Platform</title>
+    <link rel="stylesheet" href="Bidda.css"> <!-- Link to CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Auction Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Auctions</a></li>
+                <li><a href="#">Sell an Item</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="hero">
+            <h2>Find Exclusive Items, Bid, and Win!</h2>
+            <p>Explore a wide range of rare items and participate in exciting auctions.</p>
+            <button>Start Bidding</button>
+        </section>
+        <section id="featured-auctions">
+            <h2>Featured Auctions</h2>
+            <div class="auction-item">
+                <h3>Antique Watch</h3>
+                <p>Current Bid: <span class="bid-amount">$120</span></p>
+                <button class="bid-button">Bid Now</button>
+            </div>
+            <div class="auction-item">
+                <h3>Vintage Camera</h3>
+                <p>Current Bid: <span class="bid-amount">$75</span></p>
+                <button class="bid-button">Bid Now</button>
+            </div>
+            <section id="sell-item">
+                <h2>Sell An Item</h2>
+                
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" required>
+                
+                <label for="item-description">Description:</label>
+                <textarea id="item-description" name="item-description" required></textarea>
+                
+                <label for="item-price">Price ($):</label>
+                <input type="number" id="item-price" name="item-price" min="0" required>
+                
+                <input type="submit" value="Sell Item">
+            </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Auction Platform</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+<script src="Bidda.js"></script>
+</body>
+</html>
